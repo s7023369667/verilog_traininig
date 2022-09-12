@@ -48,7 +48,7 @@ always @(posedge clka or negedge rstna)begin
 		wr_ptr <= wr_ptr + 4'h1;
 	end
 end
-assign wr_ptr_nxt = wr_ptr + 1'b1;
+assign wr_ptr_nxt = wr_ptr + 4'b1;
 
 always @(posedge clka or negedge rstna)begin
 	if (~rstna)begin
